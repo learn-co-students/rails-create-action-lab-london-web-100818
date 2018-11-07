@@ -1,1 +1,11 @@
-<!-- Create your form here -->
+<h1>Student Form</h1>
+<%= form_for @student do |f| %>
+    <%=f.label :first_name%>
+    <%=f.text_field :first_name, id: "first_name"%>
+    <br>
+    <%=f.label :last_name%>
+    <%=f.text_field :last_name, id: "last_name"%>
+    <br>
+    <%=f.submit "Submit Student"%>
+<%end%>
+
